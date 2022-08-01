@@ -16,11 +16,12 @@ config = {
   "appId": "1:1005608705490:web:ce2b333b88ebac2ab37c0b",
 
   "measurementId": "G-EYC7Q8BH6C",
-  "databaseURL": ""
+  "databaseURL": "https://authentication-2e1b9-default-rtdb.europe-west1.firebasedatabase.app/"
 
 }
 firebase=pyrebase.initialize_app(config)
 auth=firebase.auth()
+db=firebase.database()
 app=Flask(__name__)
 
 
